@@ -2,7 +2,7 @@
 Secrets-auth-Project is a website that allows users to log in using local or Google OAuth login. After signing up/logging in, users can submit their private secrets, which are only visible to them. Users can log out if they want, or their session details will be saved to their local browser. This project focuses on user authorization and session handling using various technologies.
 
 ## Table of Contents
-- [Tech Stack](#tech-stack)
+- [Tech-Stack and Tools Used](#tech-stack-and-tools-used)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
@@ -77,12 +77,16 @@ To get a local copy up and running, follow these simple steps:
 5. Set up Google OAuth credentials:
    
    5.1. **Go to the [Google Cloud Console](https://console.cloud.google.com/) and Log in with your Google Account**.
+   
    5.2. **Create a new project named "Secrets"**.
+   
    5.3. **Navigate to "APIs & Services" and create OAuth 2.0 Client IDs**.
+   
    5.4. **Add your authorized redirect URLs (e.g., `http://localhost:3000/auth/google/secrets`)**.
+   
    5.5. **Copy the Client ID and Client Secret and add them to your `.env` file**.
 
-6. Create a `.env` file in the project root and add your PostgreSQL database connection details along with session and Google OAuth credentials:
+7. Create a `.env` file in the project root and add your PostgreSQL database connection details along with session and Google OAuth credentials:
    
    ```plaintext
    PG_USER=your_db_user
@@ -95,12 +99,12 @@ To get a local copy up and running, follow these simple steps:
    GOOGLE_CLIENT_SECRET=your_google_client_secret
    ```
 
-7. Start the server:
+8. Start the server:
    ```sh
    node index.js
    ```
 
-8. Open your web browser and go to `http://localhost:3000`.
+9. Open your web browser and go to `http://localhost:3000`.
 
 ## Usage
 - Open your web browser and navigate to `http://localhost:3000`.
