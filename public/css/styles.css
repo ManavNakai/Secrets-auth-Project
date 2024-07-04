@@ -1,0 +1,26 @@
+
+body {
+  background-color: #E8ECEF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+footer {
+  flex: 0 0 auto;
+  color: black;
+  text-align: center;
+  margin-top: auto;
+}
